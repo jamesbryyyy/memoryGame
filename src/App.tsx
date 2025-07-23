@@ -9,12 +9,12 @@ type cardsType = {
 };
 
 const cardSource: Omit<cardsType, "id" | "flipped">[] = [
-  { source: "src", img: "/img/pizza.png", match: false },
-  { source: "src", img: "/img/burger.png", match: false },
-  { source: "src", img: "/img/cream.png", match: false },
-  { source: "src", img: "/img/shake.png", match: false },
-  { source: "src", img: "/img/hotdog.png", match: false },
-  { source: "src", img: "/img/fries.png", match: false },
+  { source: "src", img: `${import.meta.env.BASE_URL}img/pizza.png`, match: false },
+  { source: "src", img: `${import.meta.env.BASE_URL}img/burger.png`, match: false },
+  { source: "src", img:`${import.meta.env.BASE_URL}img/cream.png`, match: false },
+  { source: "src", img:`${import.meta.env.BASE_URL}img/shake.png`, match: false },
+  { source: "src", img:`${import.meta.env.BASE_URL}img/hotdog.png`, match: false },
+  { source: "src", img:`${import.meta.env.BASE_URL}img/fries.png`, match: false },
 ];
 
 function App() {

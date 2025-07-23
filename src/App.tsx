@@ -135,7 +135,7 @@ function App() {
                 className="absolute w-full h-full object-cover rounded shadow backface-hidden transform rotate-y-180"
               />
               <img
-                src="img/blank.png"
+                src="/img/blank.png" 
                 alt="back"
                 onClick={() => pickCards(card)}
                 className="absolute w-full h-full object-cover rounded shadow backface-hidden cursor-pointer"
